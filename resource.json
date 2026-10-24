@@ -42,7 +42,7 @@
       "url": "https://duckdb.org/docs/stable/sql/constraints",
       "capability": "SQL constraints and tabular queries; documentation redirected in this session",
       "burden": "Exact feature details remain unconfirmed here; use SQL tooling rather than assuming an absent feature",
-      "evidence_status": "primary page read; exact feature parity not fully executed"
+      "evidence_status": "Access limited: feature details unverified"
     },
     {
       "name": "Great Expectations",
@@ -65,18 +65,22 @@
       "Korean"
     ],
     "queries": [
-      "Relational quality gate",
-      "relational quality",
-      "여러 표의 복합 키·필수 값·외래 키를 검사해 오류 행을 지정한다.",
-      "duckdb",
-      "great-expectations"
+      "relational primary foreign key quality validation orphan 외래키 고아 데이터"
     ],
     "scope": "Primary documentation and repository descriptions were read on the public web. Competitor code, plugins and packaged execution were not exhaustively tested. This is a bounded prior-art review, not a worldwide novelty search.",
     "limitations": [
       "Search results and documentation do not establish universal absence.",
       "Competitor configuration/plugin parity is not exhausted.",
       "No independent end-user interview or deployment evidence."
-    ]
+    ],
+    "proposed_queries": [
+      "Relational quality gate",
+      "relational quality",
+      "여러 표의 복합 키·필수 값·외래 키를 검사해 오류 행을 지정한다.",
+      "duckdb",
+      "great-expectations"
+    ],
+    "query_scope": "One actual bilingual search per resource, grouped in shared cached batches; additional suggested terms are explicitly proposed, not executed."
   },
   "checked_at": "2026-10-24",
   "distinctive_capability": "Compound-key indexes and explicit nullable foreign-key policies. An offline executable can be called by a small model and checked against an explicit task contract.",
@@ -102,7 +106,8 @@
   "validation_results": {
     "worked_cases": 1,
     "evaluation_cases": 1,
-    "root_required_field_rejection": true
+    "root_required_field_rejection": true,
+    "fixture_role": "Development regression fixtures; not an untouched final model evaluation set."
   },
   "external_impact_evidence": [],
   "decision": {
